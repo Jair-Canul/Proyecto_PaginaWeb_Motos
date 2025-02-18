@@ -1,0 +1,118 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Roboto", sans-serif;
+}
+/*Variables*/
+:root {
+    --main-color: #ff4424;
+    --second-color: #f77214;
+    --text-color: #080a08;
+    --text-alter-color: #868e96;
+    --third-color: #fde628;
+    --bg-color: #fff;
+    --container-color: #faeee4;
+}
+img {
+    width: 100%;
+
+}
+a {
+    text-decoration: none;
+}
+section {
+    padding: 3rem 0 2rem;
+}
+.container {
+    max-width: 1060px;
+    width: 100%;
+    margin: auto;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--container-color);
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #e1dbd2;
+}
+.logo {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 0 2px;
+    border: 2px solid var(--second-color);
+    font-weight: 500;
+    color: var(--bg-color);
+    background: var(--text-color);
+    text-transform: uppercase;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.nav-link{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: var(--main-color);
+    transition: 0.3s;
+}
+.sign-up,
+.mobile-sign-up{
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 8px 16 px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+.sign-up:hover,
+.mobile-sign-up:hover{
+    background: var(--second-color);
+    transition: 0.3s;
+}
+.mobile-sign-up{
+    display: none;
+}
+.menu-icon{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+    transition: 0.3s;
+}
+.menu-icon div {
+    display: block;
+    background: var(--text-color);
+    height: 2px;
+    width: 24px;
+    transition: 0.3s;
+}
+.move .line1{
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.move .line2{
+    opacity: 0;;
+}
+.move .line3{
+    transform: rotate(45deg) translate(-5px, -5px);
+}
