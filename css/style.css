@@ -107,12 +107,231 @@ header {
     width: 24px;
     transition: 0.3s;
 }
-.move .line1{
+.move .line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
-.move .line2{
+.move .line2 {
     opacity: 0;;
 }
-.move .line3{
+.move .line3 {
     transform: rotate(45deg) translate(-5px, -5px);
+}
+/* Home */
+.home {
+    padding-top: 7rem !important;
+    background: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+.home h1 {
+    font-family: "Racing Sans One", sans-serif;
+    font-size: 5.2rem;
+    line-height: 4rem;
+    background: var(--bg-color);
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.home-data {
+    display: grid;
+    gap: 1.5rem;
+}
+.home-box {
+    display: grid;
+    gap: 4px;
+}
+.home-box h3 {
+    font-size: 0.9rem;
+}
+.home-box h2 {
+    font-size: 1rem;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+.border-home {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1dbd2;
+}
+.home-img {
+    max-width: 650px;
+    width: 100%;
+}
+.helmet-box img {
+    max-width: 140px;
+    width: 100%;
+
+}
+.helmet-box {
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+.helmet-box::after {
+    content: '';
+    position: absolute;
+    top: 60px;
+    width: 120%;
+    height: 124px;
+    border: 2px solid #e1dbd2;
+    z-index: -1;
+}
+.helmet-box a {
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--text-color);
+    background: var(--third-color);
+    padding: 2px 8px;
+}
+.helmet-box i {
+    font-size: 18px;
+}
+.home-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.home-btns a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    font-size: 0.87rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.home-btns i{
+    font-size: 17px;
+}
+.dealer-btn{
+    background: var(--third-color);
+}
+.ride-btn{
+    background: var(--bg-color); 
+}
+.home-btns a:hover {
+    background: var(--second-color);
+    color: var(--bg-color);
+    transition: 0.3s;   
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--second-color);
+    text-transform: uppercase;
+}
+.heading h2 {
+    font-size: 1.8rem;
+}
+.bikes-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+.bike-box {
+    position: relative;
+    padding: 15px;
+    background: var(--bg-color);
+    border: 1px solid hsl(0deg 0% 54% / 14%);
+}
+.bike-box:hover {
+    box-shadow: 0 4px 16px rgb(0 0 0 /10%);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.16, 1);
+}
+.bike-img {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #28a745;
+    background: hsl(134, 61%, 41%, 0.14);
+    padding: 2px 10px;
+    border-radius: 0.5rem;
+}
+.title-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px
+}
+.title-data h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.title-data p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-alter-color);
+}
+.bike-price {
+    color: var(--second-color);
+}
+.bike-price span {
+    font-size: 0.7rem;
+    color: var(--text-alter-color);
+}
+.book-btn {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    background: var(--second-color);
+    color: var(--bg-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.book-btn:hover {
+    background: var(--main-color);
+    transition: 0.3s;
+}
+.work .heading {
+    align-items: center;
+}
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.work-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.work-box i {
+    font-size: 1.6rem;
+    color: var(--second-color);
+    background: hsl(25, 93%, 52%, 7%);
+    padding: 12px;
+    border-radius: 50%;
 }
